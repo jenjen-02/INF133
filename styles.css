@@ -1,0 +1,457 @@
+/* Global Styles */
+body {
+    background-color: #FAF5EB;
+    color: #222222;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: #222222;
+    padding: 10px;
+    position: fixed;
+    width: 98%;
+    top: 0;
+    z-index: 1000;
+}
+
+#logo img {
+    max-width: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    background-color: transparent;
+    color: #222222;
+    font-family: "Poppins";
+    font-weight: 200;
+    padding: 20px 0;
+}
+
+.footer-icons {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-icons i {
+    margin: 0 10px;
+}
+
+p {
+    margin: 0;
+}
+
+/* Header Tabs Styles */
+#header-tabs ul,
+#about-header-tabs ul,
+#contact-header-tabs ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#header-tabs ul li,
+#about-header-tabs ul li,
+#contact-header-tabs ul li,
+#work-header-tabs ul li {
+    display: inline;
+    margin-right: 40px;
+}
+
+#header-tabs ul li a,
+#about-header-tabs ul li a,
+#contact-header-tabs ul li a,
+#work-header-tabs ul li a {
+    text-decoration: none;
+    color: #222222;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+#header-tabs ul li.work-tab a:hover,
+#about-header-tabs ul li.work-tab a:hover,
+#contact-header-tabs ul li.work-tab a:hover,
+#work-header-tabs ul li.work-tab a {
+    color: #FFB5A8;
+}
+
+#header-tabs ul li.about-tab a:hover,
+#about-header-tabs ul li.about-tab a,
+#contact-header-tabs ul li.about-tab a:hover,
+#work-header-tabs ul li.about-tab a:hover {
+    color: #89ACD6;
+}
+
+#header-tabs ul li.contact-tab a:hover,
+#about-header-tabs ul li.contact-tab a:hover,
+#contact-header-tabs ul li.contact-tab a {
+    color: #86AB88;
+}
+
+#about-header-tabs ul li.about-tab a:hover,
+#contact-header-tabs ul li.contact-tab a:hover,
+#work-header-tabs ul li.work-tab a:hover {
+    color: #222222;
+}
+
+ /* Works Page Specific Styles */
+.rectangle {
+    max-width: 100%;
+    height: 200px;
+    background-color: #FFFFFF;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 200;
+    margin-top: 130px;
+    margin-bottom: 50px;
+}
+
+
+.project-info {
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-info h2 {
+    font-family: Poppins;
+    font-size: 24px;
+    color: #222222;
+}
+
+.project-info p {
+    font-family: Poppins;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 100px;
+}
+
+/* Home Page Specific Styles */
+#name-description {
+    text-align: center;
+    margin-top: 100px;
+    position: relative;
+}
+
+#name-description h1 {
+    font-size: 100px;
+    font-family: "Didot";
+    margin-bottom: 10px;
+    margin-top: 220px;
+}
+
+#name-description p {
+    font-size: 30px;
+    font-family: "Poppins";
+    font-weight: 200;
+}
+
+#image-colorGradient img {
+    margin-left: 4px;
+    width: 800px;
+    height: 480px;
+    border-radius: 50%;
+    position: absolute;
+    top: 84px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+#overlay-oval {
+    width: 800px;
+    height: 480px;
+    background-color: rgba(200, 200, 200, 0.12);
+    border-radius: 50%;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 195px;
+    margin-bottom: 90px;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    border-left: 2px solid #222222;
+    border-bottom: 2px solid #222222;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: rotate(-45deg) translateY(0);
+      }
+    50% {
+      transform: rotate(-45deg) translateY(-20px);
+    }
+}
+
+#works {
+    margin-top: 70px;
+}
+
+.work-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #919191;
+}
+
+.work-item p {
+    font-family: "Times New Roman";
+    font-size: 70px;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.work-description {
+    flex-grow: 1;
+}
+
+.work-description h2 {
+    font-family: "Didot";
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+.work-description .slogan {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    color: #585858;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+.work-description .description {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.work-item img {
+    max-width: 600px;
+    width: auto;
+    height: auto;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+.view-button {
+    background-color: #3E3E3E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: Poppins;
+    font-size: 26px;
+    font-weight: 200;
+    cursor: pointer;
+    transition: background-color 0.3 ease, transform 0.3s ease;
+    margin-left: 30px;
+}
+
+.view-button-link {
+    text-decoration: none;
+    color: #FAF5EB;
+}
+
+.view-button:active {
+    background-color: #3E3E3E;
+    color: #FAF5EB;
+}
+
+.view-button:hover {
+    background-color: #919191;
+    color: #FAF5EB;
+}
+
+/* About Page Specific Styles */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-left {
+    flex: 1;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.about-left h2 {
+    font-family: "Didot";
+    font-size: 50px;
+    color: #222222;
+    margin-bottom: 10px;
+}
+
+.about-left img {
+    width: 325px;
+    height: 375px;
+    border-radius: 30%;
+}
+
+.about-right {
+    flex: 2;
+    text-align: left;
+    margin-top: 100px;
+}
+
+.about-right h1 {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 300;
+    color: #222222;
+    margin-bottom: 5px;
+}
+
+.section-divider {
+    border: 1px solid #919191;
+    width: 800px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.about-right p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 200;
+    color: #222222;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+.resume-button {
+    background-color: #3E3E3E;
+    color: #FAF5EB;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: Poppins;
+    font-size: 26px;
+    font-weight: 200;
+    cursor: pointer;
+    transition: background-color 0.3 ease, transform 0.3s ease;
+    margin-right: 1px;
+    margin-bottom: 50px;
+}
+
+.resume-button-link {
+    text-decoration: none;
+    color: #FAF5EB;
+}
+
+.resume-button:active {
+    background-color: #3E3E3E;
+    color: #FAF5EB;
+}
+
+.resume-button:hover {
+    background-color: #919191;
+    color: #FAF5EB;
+}
+
+/* Contact Page Specific Styles */
+form {
+    margin: 0;
+    padding: 0;
+}
+
+#contact {
+    text-align: center;
+    padding: 40px;
+}
+
+.section-title {
+    font-family: "Didot";
+    font-size: 36px;
+    color: #222222;
+    margin-bottom: 20px;
+    margin-top: 90px;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    font-family: Poppins;
+    font-size: 16px;
+    color: #222222;
+    margin-top: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-family: Poppins;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+input[type=submit] {
+    background-color: #3E3E3E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: Poppins;
+    font-weight: 200;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+input[type=submit]:hover {
+    background-color: #919191;
+}
+
+#success-notification {
+    display: none;
+    background-color: #86AB88;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+form:valid #success-notification:target {
+    display: block;

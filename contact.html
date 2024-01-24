@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+     <head>
+         <title>Jenny's Portfolio-Contact</title>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale-1.0">
+         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&display=swap" rel='stylesheet'>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+         <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <header>
+          <div id="logo">
+              <a href="index.html">
+                <img src="/Users/jennynoh/Downloads/logo.png" alt="Jenny's Portfolio Logo">
+              </a>
+          </div>
+          <nav id="contact-header-tabs">
+              <ul>
+                  <li class="work-tab"><a href="index.html#view-work">Work</a></li>
+                  <li class="about-tab"><a href="about.html">About</a></li>
+                  <li class="contact-tab"><a href="contact.html">Contact</a></li>
+              </ul>
+          </nav>
+      </header>
+      <main>
+          <section id="contact">
+              <h1 class="section-title">Let's Connect!</h1>
+              <div class="contact-form">
+                  <form id="contact-form">
+                      <label for="name">Name</label>
+                      <input type="text" id="name" name="name" placeholder="Your name..." required>
+
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" placeholder="Your email..." required>
+
+                      <label for="message">Message</label>
+                      <textarea id="message" name="message" rows="7" placeholder="Write something.." required></textarea>
+
+                      <input type="submit" value="Submit">
+                  </form>
+                  <div id="success-notification">Received. Thank you!</div>
+              </div>
+          </section>
+      </main>
+      <script>
+          document.addEventListener("DOMContentLoaded", function() {
+              console.log("DOM Loaded");
+              const contactForm = document.getElementById("contact-form");
+              const successNotification = document.getElementById("success-notification");
+
+              contactForm.addEventListener("submit", function(event) {
+                  event.preventDefault();
+                  console.log("Form submitted")
+                  setTimeout(function() {
+                      successNotification.style.display = "block";
+
+                      document.getElementById("name").value = "";
+                      document.getElementById("email").value = "";
+                      document.getElementById("message").value = "";
+                  }, 1000);
+              });
+          });
+      </script>
+      <footer>
+          <div class="footer-icons">
+              <i class="fas fa-envelope"></i>
+              <i class="fab fa-linkedin"></i>
+          </div>
+          <p>&copy; 2024 by Jenny Noh.</p>
+      </footer>
+    </body>
+</html>
