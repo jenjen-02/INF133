@@ -1,9 +1,83 @@
-<html>
-     <head>
-          <title>Home</title>
-     <head>
-     <body>
-          <h1>Jenny Noh</h1>
-          <p>hello</p>
-     <body>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenny's Portfolio-Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&display=swap" rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="/Users/jennynoh/Downloads/logo.png" alt="Jenny's Portfolio Logo">
+            </a>
+        </div>
+        <nav id="header-tabs">
+            <ul>
+                <li class="work-tab"><a href="#work">Work</a></li>
+                <li class="about-tab"><a href="about.html">About</a></li>
+                <li class="contact-tab"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="name-description">
+        <h1>Jenny Noh</h1>
+        <p>An aspiring UX/UI Designer based in Irvine, CA.</p>
+        <div class="arrow-container">
+            <div class="arrow"></div>
+        </div>
+    </div>
+    <div id="image-colorGradient">
+        <img src="/Users/jennynoh/Creative Cloud Files/colorGradient3 copy.png" alt="Image of color gradients (red, blue, and green)">
+    </div>
+    <div id="overlay-oval">
+    </div>
+    <section id="work">
+        <hr>
+        <article class="work-item">
+            <p>01</p>
+            <img src="/Users/jennynoh/Downloads/crema.png" alt="Work 1: Créma">
+            <div class="work-description">
+                <h2>Créma</h2>
+                <p class="slogan">
+                    "Discover Your Perfect Cafe Spot. Check seat availability. Savor the Moment."
+                </p>
+                <p class="description">
+                    Créma is a café seating availability app to enhance cafe and
+                    study experience of college students and café goers.
+                </p>
+                <a href="crema.html" class="view-button-link">
+                    <button id="view-work" class="view-button">View Work</button>
+                </a>
+            </div>
+        </article>
+        <article class="work-item">
+            <p>02</p>
+            <img src="/Users/jennynoh/Downloads/customClothingDesigns.png" alt="Work 2: Custom Clothing Designs">
+            <div class="work-description">
+                <h2>Custom Clothing Designs</h2>
+                <p class="slogan">
+                    Custom Designs for Everyday Wear
+                </p>
+                <p class="description">
+                    Custom-designed t-shirt, sweatshirt, and hoodies for Irvine Onnuri Church's retreats,
+                    blending casual style with the themes of the retreat.
+                </p>
+                <a href="customClothingDesigns.html" class="view-button-link">
+                    <button id="view-work" class="view-button">View Work</button>
+                </a>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <div class="footer-icons">
+            <span class="fas fa-envelope"></span>
+            <span class="fab fa-linkedin"></span>
+        </div>
+        <p>&copy; 2024 by Jenny Noh.</p>
+    </footer>
+</body>
+</html>
